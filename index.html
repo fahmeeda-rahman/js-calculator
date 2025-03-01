@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center h-screen bg-blue-500">
+    <div class="w-80 p-10 bg-white rounded-lg shadow-xl">
+        <h1 class="text-center items-center justify-center pb-6 text-2xl font-bold text-gray-700 ">
+            Calculator
+          </h1>
+          
+        <input id="display" type="text" class="w-full p-3 text-right text-lg border border-gray-300  bg-gray-300 rounded-lg shadow-md text-black rounded" disabled>
+        <div class="grid grid-cols-4 gap-2 mt-4">
+            <button class="btn px-6 py-3 bg-gray-300 rounded-lg shadow-md text-black 
+            hover:bg-blue-500 hover:text-white hover:shadow-lg transition-all duration-300" onclick="clearDisplay()">C</button>
+            <button class="btn px-6 py-3 bg-gray-300 rounded-lg shadow-md text-black 
+            hover:bg-blue-500 hover:text-white hover:shadow-lg transition-all duration-300" onclick="appendToDisplay('/')">/</button>
+            <button class="btn px-6 py-3 bg-gray-300 rounded-lg shadow-md text-black 
+            hover:bg-blue-500 hover:text-white hover:shadow-lg transition-all duration-300" onclick="appendToDisplay('*')">*</button>
+            <button class="btn px-6 py-3 bg-gray-300 rounded-lg shadow-md text-black 
+            hover:bg-blue-500 hover:text-white hover:shadow-lg transition-all duration-300" onclick="deleteLast()">&#x10915;</button>
+            <button class="btn px-6 py-3 bg-gray-300 rounded-lg shadow-md text-black 
+            hover:bg-blue-500 hover:text-white hover:shadow-lg transition-all duration-300" onclick="appendToDisplay('7')">7</button>
+            <button class="btn px-6 py-3 bg-gray-300 rounded-lg shadow-md text-black 
+            hover:bg-blue-500 hover:text-white hover:shadow-lg transition-all duration-300" onclick="appendToDisplay('8')">8</button>
+            <button class="btn px-6 py-3 bg-gray-300 rounded-lg shadow-md text-black 
+            hover:bg-blue-500 hover:text-white hover:shadow-lg transition-all duration-300" onclick="appendToDisplay('9')">9</button>
+            <button class="btn px-6 py-3 bg-gray-300 rounded-lg shadow-md text-black 
+            hover:bg-blue-500 hover:text-white hover:shadow-lg transition-all duration-300" onclick="appendToDisplay('-')">-</button>
+            <button class="btn px-6 py-3 bg-gray-300 rounded-lg shadow-md text-black 
+            hover:bg-blue-500 hover:text-white hover:shadow-lg transition-all duration-300" onclick="appendToDisplay('4')">4</button>
+            <button class="btn px-6 py-3 bg-gray-300 rounded-lg shadow-md text-black 
+            hover:bg-blue-500 hover:text-white hover:shadow-lg transition-all duration-300" onclick="appendToDisplay('5')">5</button>
+            <button class="btn px-6 py-3 bg-gray-300 rounded-lg shadow-md text-black 
+            hover:bg-blue-500 hover:text-white hover:shadow-lg transition-all duration-300" onclick="appendToDisplay('6')">6</button>
+            <button class="btn px-6 py-3 bg-gray-300 rounded-lg shadow-md text-black 
+            hover:bg-blue-500 hover:text-white hover:shadow-lg transition-all duration-300" onclick="appendToDisplay('+')">+</button>
+            <button class="btn px-6 py-3 bg-gray-300 rounded-lg shadow-md text-black 
+            hover:bg-blue-500 hover:text-white hover:shadow-lg transition-all duration-300" onclick="appendToDisplay('1')">1</button>
+            <button class="btn px-6 py-3 bg-gray-300 rounded-lg shadow-md text-black 
+            hover:bg-blue-500 hover:text-white hover:shadow-lg transition-all duration-300" onclick="appendToDisplay('2')">2</button>
+            <button class="btn px-6 py-3 bg-gray-300 rounded-lg shadow-md text-black 
+            hover:bg-blue-500 hover:text-white hover:shadow-lg transition-all duration-300" onclick="appendToDisplay('3')">3</button>
+            <button class="btn px-6 py-3 bg-gray-300 rounded-lg shadow-md text-black 
+            hover:bg-blue-500 hover:text-white hover:shadow-lg transition-all duration-300" onclick="appendToDisplay('%')">%</button>
+            <button class="btn px-6 py-3 bg-gray-300 rounded-lg shadow-md text-black 
+            hover:bg-blue-500 hover:text-white hover:shadow-lg transition-all duration-300 col-span-2" onclick="appendToDisplay('0')">0</button>
+            <button class="btn px-6 py-3 bg-gray-300 rounded-lg shadow-md text-black 
+            hover:bg-blue-500 hover:text-white hover:shadow-lg transition-all duration-300" onclick="appendToDisplay('.')">.</button>
+            <button class="btn px-6 py-3 bg-gray-300 rounded-lg shadow-md text-black 
+            hover:bg-blue-500 hover:text-white hover:shadow-lg transition-all duration-300" onclick="calculate()">=</button>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
